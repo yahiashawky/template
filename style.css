@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9ece6;
+    padding: 25px 50px;
+}
+nav .left ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+nav .left ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+nav .left .active{
+    background-color: white;
+}
+nav .left ul li :hover{
+    background-color: white;
+    transition: 1s;
+}
+nav .right{
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+header{
+    background-color: #f89cab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.left-header{
+    margin-left: 100px;
+}
+.left-header p {
+    width: 425px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.left-header >*{
+    color: white;
+    margin-bottom: 25px;
+}
+.left-header h1{
+    font-size: 40px;
+}
+.left-header button{
+    padding: 10px;
+    /* border: none; */
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.5;
+    background: transparent;
+    /* يعني الخلفيه شفافه */
+    border: 2px solid #db4566;
+    border-radius: 20px;
+}
+.left-header button:hover{
+    background-color: #db4566;
+    transition: 1s;
+}
+.products{
+    margin-top: 100px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    background-color: #d6cfcf;
+    width: 23%;
+    padding: 10px 20px;
+}
+.card >*{
+    margin-top: 20px;
+}
+.cards .New{
+    width: max-content;
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 50%;
+    /* padding: 10px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%; */
+    
+}
+.card img{
+    margin-left: 100px;
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    /* width: 75px;
+    height: 125px; */
+}
+.card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card .price span{
+    color: #db4566;
+    margin-left: 7px;
+}
+
+/* bannar */
+.bannar{
+    background-color: #f89cab;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bannar .right-bannar p {
+    width: 400px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.bannar .right-bannar >*{
+    color: white;
+    margin-bottom: 15px;
+}
+.bannar .right-bannar .click{
+    display: flex;
+    gap: 30px;
+}
+.bannar .right-bannar .click button{
+    width: 125px;
+    padding: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 2px solid #db4566;
+    background: transparent;
+}
+.bannar .right-bannar button:hover{
+    background-color: #db4566;
+    color: white;
+    transition: 0.5s;
+}
+
+/* why us */
+
+.why-us h1{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 30%;
+    letter-spacing: 2px;
+}
+.services{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+.service{
+    position: relative;
+    background-color: #e3dada;
+    width: 35%;
+    padding: 15px;
+}
+.service i{
+    position: absolute;
+    top: -25px;
+    background-color: #db4566;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    left: 45%;
+    border-radius: 50%;
+}
+.service >*{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.service h2{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #db4566;
+}
+.test h1{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 100px;
+}
+.test-flex{
+    display: flex;
+    gap: 20px;
+}
+.test-items{
+    background-color: #ded7d7;
+    text-align: center;
+    width: 35%;
+    padding: 15px;
+}
+.test .test-flex .test-items img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}.test-items >*{
+    margin-bottom: 20px;
+}
+.test-items .star i{
+    color: gold;
+    font-size: 20px;
+}
+.test-items h2{
+    color: #db4566;
+}
+.test-items p{
+    line-height: 1.5;
+}
+
+/*  contact us */
+
+.contact-us h1{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 100px;
+}
+.contact-flex{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+.right-contact{
+    display: flex;
+    flex-direction: column;
+
+}
+.right-contact>*{
+    margin-bottom: 20px;
+}
+.right-contact input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #db4566;
+    /* width: 200%; */
+    padding: 15px;
+}
+.right-contact input::placeholder{
+    color: #db4566;
+    font-size: 18px;
+}
+.right-contact textarea{
+    border: 2px solid #db4566;
+    outline: none;
+}
+footer{
+    background-color: #232b37;
+    padding: 40px 150px;
+}
+.top-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo img{
+    width: 200px;
+
+}
+.dis h1{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.dis p{
+    font-size: 20px;
+    color: gray;
+}
+.sub input{
+    width: 150px;
+    padding: 10px;
+    outline: none;
+}
+.sub button{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+hr{
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.middle-footer{
+    display: flex;
+
+}
+.middle-flex{
+    width: 35%;
+    text-align: center;
+    color: white;
+}
+.middle-flex .icons{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.middle-flex .icons i{
+    cursor: pointer;
+    width: max-content;
+    margin-left: 165px;
+}
+.middle-flex .icons i:hover{
+    color: blue;
+    transition: 0.5s;
+}
+.middle-flex .linked{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.middle-flex >*{
+    margin-bottom: 20px;
+}
+.middle-flex h1{
+    font-size: 25px;
+}
+.middle-flex p{
+    width: 90%;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.middle-flex .linked a{
+    width: max-content;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 165px;
+}
+.middle-flex .linked a:hover{
+    color: blue;
+    transition: 0.5s;
+}
+.down-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.down-footer p{
+    color: white;
+    font-size: 17px;
+}
+@media screen and (max-width : 480px){
+    nav .left{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header{
+        flex-direction: column;
+    }
+    header .left-header{
+        /* margin: 10px 20px;
+        align-items: center; */
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    header .left-header h1{
+        font-size: 25px;
+        align-items: center;
+        
+    }
+    header .left-header p{
+        /* width: 300px; */
+        width: 80%;
+        margin: 20px auto;
+    }
+    .left-header button{
+        display: block;
+        margin: 40px auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .bannar{
+        flex-direction: column;
+    }
+    .bannar .left-bannar img{
+        width: 100%;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .service{
+        width: 100%;
+    }
+    .test-flex{
+        flex-direction: column;
+    }
+    .test-items{
+        width: 100%;
+    }
+    .contact-flex{
+        flex-direction:column;
+    }
+    .left-contact iframe{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .right-contact{
+        width: 100%;
+    }
+    .footer{
+        padding: 40px 0px;
+    }
+    .top-footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* .top-footer >*{
+        align-items: center;
+    } */
+    .top-footer .logo{
+        width: 100%;
+    }
+    .top-footer .dis{
+        width: 100%;
+    }
+    .top-footer .dis h1{
+        margin-left: 0;
+        width: 300px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .top-footer .sub{
+        width: 100%;
+    }
+    .middle-footer{
+        flex-direction: column;
+    }
+    .middle-footer .middle-flex{
+        /* margin-left: 0px; */
+        width: 90%;
+    }
+    .middle-footer .middle-flex p{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 100px;
+        margin-left: 0px;
+    }
+    .middle-footer .middle-flex .icons i{
+        margin-left: 55px;
+    }
+    .middle-footer .middle-flex .linked a{
+        margin-left: 50px;
+    }
+    .down-footer{
+        flex-direction: column;
+    }
+    .right-down-footer{
+        display: flex;
+        gap: 10px;
+    }
+}
+
